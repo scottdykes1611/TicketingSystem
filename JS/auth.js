@@ -2,10 +2,10 @@ function login() {
     let error = false
 
     //check presence of email
-    error = validate("email") || error
+    error = presence("email") || error
 
     //check presence of password
-    error = validate("password") || error
+    error = presence("password") || error
 
     if (error === true) {
         alert("Invalid login details")
@@ -19,22 +19,22 @@ function register() {
     let error = false
 
     //check presence of first name
-    error = validate("firstName") || error
+    error = presence("firstName") || error
 
     //check presence of last ame
-    error = validate("lastName") || error
+    error = presence("lastName") || error
 
     //check presence of department name
-    error = validate("depName") || error
+    error = presence("depName") || error
 
     //check presence of location
-    error = validate("location") || error
+    error = presence("location") || error
 
     //check presence of email
-    error = validate("email") || error
+    error = presence("email") || error
 
     //check presence of password
-    error = validate("password") || error
+    error = presence("password") || error
 
     if (error === true) {
         alert("Data is invalid")
@@ -44,7 +44,7 @@ function register() {
     window.location.href = "./login.html";
 }
 
-function validate(id) {
+function presence(id) {
     //returns true if value is not present
     const element = document.getElementById(id)
     const value = element.value
@@ -58,3 +58,4 @@ function validate(id) {
         return false
     }
 }
+

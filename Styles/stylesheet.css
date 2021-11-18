@@ -42,6 +42,7 @@ h2 {
     border-color: red;
 }
 
+/* Navigation */
 
 .link {
     padding: 0.4em;
@@ -58,4 +59,10 @@ h2 {
 .authNav {
     text-align: center;
     padding: 1em;
+}
+
+.navBar {
+    padding-top: 1em;
+    display: flex;
+    justify-content: space-evenly;
 }
