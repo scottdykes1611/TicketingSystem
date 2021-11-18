@@ -2,6 +2,8 @@
     <head>
         <title>Register - Ticketing System</title>
         <link rel="stylesheet" type="text/css" href="../../Styles/stylesheet.css" />
+        <script src="../../JS/auth.js">
+        </script>
     </head>
     <body>
         <div class="card">
@@ -13,7 +15,7 @@
 
         <div class="card">
             <h2 class="subtitle">Register an Account</h2>
-            <form>
+            <form onsubmit="event.preventDefault();">
                 <div class="formElement">
                     <label for="firstName" class="formLabel">First name:</label><br>
                     <input type="text" id="firstName" name="firstName" class="formInput"><br>
@@ -44,7 +46,7 @@
                     <input type="password" id="password" name="password" class="formInput"><br>
                 </div>
 
-                <button type="submit" class="submit">Submit</button>
+                <button type="submit" class="submit" onclick="register()">Submit</button>
             </form>
         </div>
     </body>

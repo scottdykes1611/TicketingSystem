@@ -2,6 +2,8 @@
     <head>
         <title>Log in - Ticketing System</title>
         <link rel="stylesheet" type="text/css" href="../../Styles/stylesheet.css" />
+        <script src="../../JS/auth.js">
+        </script>
     </head>
     <body>
         <div class="card">
@@ -28,40 +30,4 @@
             </form>
         </div>
     </body>
-    <script>
-        function login() {
-            const emailElement = document.getElementById("email")
-            const email = emailElement.value
-
-            const passwordElement = document.getElementById("password")
-            const password = passwordElement.value
-
-            let error = false
-
-            //check presence of email
-            if (email === undefined || email === "") {
-                emailElement.classList.add("error")
-                error = true
-            }
-            else {
-                emailElement.classList.remove("error")
-            }
-
-            //check presence of password
-            if (password === undefined || password === "") {
-                passwordElement.classList.add("error")
-                error = true
-            }
-            else {
-                passwordElement.classList.remove("error")
-            }
-
-            if (error === true) {
-                alert("Invalid login details")
-                return
-            }
-
-            alert("Successfully logged in!")
-        }
-    </script>
 </html>
