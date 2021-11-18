@@ -1,0 +1,61 @@
+body {
+    background-color: coral;
+}
+
+.card {
+    background-color: white;
+    padding: 1em;
+    width: 40em;
+    margin: 0 auto 1em auto;
+
+}
+
+h1, h2 {
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+/* Form components */
+
+.formElement {
+    display: flex;
+    margin-bottom: 0.5em;
+}
+
+.formLabel {
+    flex: 1;
+}
+
+.formInput {
+    flex: 2;
+}
+
+.submit {
+    float: right;
+}
+
+.error {
+    border-color: red;
+}
+
+
+.link {
+    padding: 0.4em;
+    background-color: darkgrey;
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.authNav {
+    text-align: center;
+    padding: 1em;
+}
