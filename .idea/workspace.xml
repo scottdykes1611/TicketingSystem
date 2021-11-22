@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fc16127-268d-44e4-a185-6c92dbdbea8f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Pages/Auth/requestReset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Auth/reset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/BasicUser/createTicket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/BasicUser/viewTickets.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Auth/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Main/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +31,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.reset.html">
+    <configuration name="homepage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TicketingSystem/Pages/Main/homepage.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TicketingSystem/Pages/Auth/login.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="reset.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TicketingSystem/Pages/Auth/reset.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.reset.html" />
+        <item itemvalue="JavaScript Debug.homepage.html" />
         <item itemvalue="JavaScript Debug.login.html" />
       </list>
     </recent_temporary>
@@ -48,6 +60,7 @@
       <workItem from="1637270659081" duration="76000" />
       <workItem from="1637270760535" duration="47000" />
       <workItem from="1637270997740" duration="2961000" />
+      <workItem from="1637607413870" duration="2719000" />
     </task>
     <servers />
   </component>
@@ -64,5 +77,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Homepage - Ticketing System</title>
+        <link rel="stylesheet" type="text/css" href="../../Styles/stylesheet.css" />
+    </head>
+    <body>
+        <div class="card">
+            <h1 class="title">Create Ticket</h1>
+            <div class="navBar">
+                <a class="link">
+                    Create ticket
+                </a>
+
+                <a class="link">
+                    View your tickets
+                </a>
+
+                <a class="link">
+                    My account
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <form onsubmit="event.preventDefault();">
+                <div class="formElement">
+                    <label for="title" class="formLabel">Ticket title:</label><br>
+                    <input type="text" id="title" name="title" class="formInput"><br>
+                </div>
+
+                <div class="formElement">
+                    <label for="notes" class="formLabel">Notes:</label><br>
+                    <textarea id="notes" name="notes" class="formInput" rows="4"></textarea><br>
+                </div>
+
+                <button type="submit" class="submit" onclick="register()">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
