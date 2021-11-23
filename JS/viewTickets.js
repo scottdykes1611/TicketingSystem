@@ -8,19 +8,19 @@ const ticketStatus = {
 const data = [
     {
         reference: "j47dsne",
-        title: "Computer is broken",
+        title: "Computer is broken 1",
         notes: ["Placeholder text to describe problem with computer"],
         status: ticketStatus.OPEN
     },
     {
         reference: "9kalen3",
-        title: "Computer is broken",
+        title: "Computer is broken 2",
         notes: ["Placeholder text to describe problem with computer"],
         status: ticketStatus.OPEN
     },
     {
         reference: "nb829q",
-        title: "Computer is broken",
+        title: "Computer is broken 3",
         notes: ["Placeholder text to describe problem with computer"],
         status: ticketStatus.CLOSED
     },

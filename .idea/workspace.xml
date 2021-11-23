@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fc16127-268d-44e4-a185-6c92dbdbea8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JS/viewTicket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/viewTickets.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/BasicUser/viewTicket.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Main/account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/createTicket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/viewTicket.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/viewTicket.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/viewTickets.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/viewTickets.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/BasicUser/createTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/BasicUser/createTicket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/BasicUser/viewTickets.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/BasicUser/viewTickets.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Main/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main/homepage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Styles/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +63,7 @@
       <workItem from="1637270760535" duration="47000" />
       <workItem from="1637270997740" duration="2961000" />
       <workItem from="1637607413870" duration="3513000" />
-      <workItem from="1637680159080" duration="5209000" />
+      <workItem from="1637680159080" duration="6521000" />
     </task>
     <servers />
   </component>

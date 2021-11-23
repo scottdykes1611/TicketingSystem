@@ -21,6 +21,10 @@ h2 {
 
 /* Form components */
 
+form {
+    margin-top: 0.5em;
+}
+
 .formElement {
     display: flex;
     margin-bottom: 0.5em;
