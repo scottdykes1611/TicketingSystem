@@ -49,11 +49,17 @@ h2 {
     background-color: darkgrey;
     text-decoration: none;
     color: black;
+    cursor: pointer;
+}
+
+.current {
+    background-color: lightgrey;
+    color: darkgrey;
+    cursor: not-allowed;
 }
 
 .link:hover {
     background-color: lightgrey;
-    cursor: pointer;
 }
 
 .authNav {
@@ -65,4 +71,46 @@ h2 {
     padding-top: 1em;
     display: flex;
     justify-content: space-evenly;
+}
+
+
+/* Tickets */
+.ticket {
+    display: flex;
+    margin: 0.5em;
+    padding: 1em;
+    background-color: darkgrey;
+    text-decoration: none;
+    color: black;
+}
+
+.ticket:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.ticketTitle {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.ticketStatus {
+    padding: 0.5em;
+    border-radius: 1em;
+    max-width: 4em;
+    text-align: center;
+}
+
+.statusWrapper {
+    display: flex;
+    gap: 1em;
+}
+
+.Open {
+    background-color: lightgreen;
+}
+
+.Closed {
+    background-color: red;
 }

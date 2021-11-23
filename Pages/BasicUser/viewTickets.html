@@ -5,36 +5,30 @@
     </head>
     <body>
         <div class="card">
-            <h1 class="title">Create Ticket</h1>
+            <h1 class="title">View Tickets</h1>
             <div class="navBar">
-                <a class="link">
+                <a class="link" href="../Main/homepage.html">
+                    Homepage
+                </a>
+
+                <a class="link" href="createTicket.html">
                     Create ticket
                 </a>
 
-                <a class="link">
+                <a class="link current">
                     View your tickets
                 </a>
 
-                <a class="link">
+                <a class="link" href="../Main/homepage.html">
                     My account
                 </a>
             </div>
         </div>
 
-        <div class="card">
-            <form onsubmit="event.preventDefault();">
-                <div class="formElement">
-                    <label for="title" class="formLabel">Ticket title:</label><br>
-                    <input type="text" id="title" name="title" class="formInput"><br>
-                </div>
+        <div class="card" id="viewTickets">
 
-                <div class="formElement">
-                    <label for="notes" class="formLabel">Notes:</label><br>
-                    <textarea id="notes" name="notes" class="formInput" rows="4"></textarea><br>
-                </div>
-
-                <button type="submit" class="submit" onclick="register()">Submit</button>
-            </form>
         </div>
+        <script src="../../JS/viewTickets.js">
+        </script>
     </body>
 </html>
