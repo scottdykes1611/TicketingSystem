@@ -2,7 +2,7 @@
 const ticketStatus = {
     OPEN: "Open",
     CLOSED: "Closed"
-}
+};
 
 //this will be replaced with data fetched from database
 const data = [
@@ -24,19 +24,19 @@ const data = [
         notes: ["Placeholder text to describe problem with computer"],
         status: ticketStatus.CLOSED
     },
-]
+];
 
 const displayedTickets = data.map(({title, status, reference}) => {
-    const statusClass = `ticketStatus ${status}`
-    const url = `viewTicket.html?reference=${reference}`
+    const statusClass = `ticketStatus ${status}`;
+    const url = `viewTicket.html?reference=${reference}`;
 
     return (
         '<a class="ticket" href="' + url + '">' +
-            '<div class="ticketTitle">' + title + '</div>' +
-            '<div class="' + statusClass + '">' + status + '</div>' +
+        '<div class="ticketTitle">' + title + '</div>' +
+        '<div class="' + statusClass + '">' + status + '</div>' +
         '</a>'
-    )
-})
+    );
+});
 
-const element = document.getElementById("viewTickets")
-element.innerHTML = displayedTickets.join("")
+const element = document.getElementById("viewTickets");
+element.innerHTML = displayedTickets.join("");

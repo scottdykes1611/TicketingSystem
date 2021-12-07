@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fc16127-268d-44e4-a185-6c92dbdbea8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JS/createTicket.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS/notifications.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/createTicket.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/createTicket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/viewTicket.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/viewTicket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/viewTickets.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/viewTickets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Auth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Auth/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Auth/requestReset.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Auth/requestReset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Auth/reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Auth/reset.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/BasicUser/createTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/BasicUser/createTicket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/BasicUser/viewTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/BasicUser/viewTicket.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/BasicUser/viewTickets.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/BasicUser/viewTickets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Main/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main/homepage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +35,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.viewTickets.html">
+  <component name="RunManager" selected="JavaScript Debug.createTicket.html">
+    <configuration name="createTicket.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TicketingSystem/Pages/BasicUser/createTicket.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="homepage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/TicketingSystem/Pages/Main/homepage.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -44,10 +56,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.createTicket.html" />
+        <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="JavaScript Debug.viewTickets.html" />
         <item itemvalue="JavaScript Debug.reset.html" />
         <item itemvalue="JavaScript Debug.homepage.html" />
-        <item itemvalue="JavaScript Debug.login.html" />
       </list>
     </recent_temporary>
   </component>
@@ -63,7 +76,10 @@
       <workItem from="1637270760535" duration="47000" />
       <workItem from="1637270997740" duration="2961000" />
       <workItem from="1637607413870" duration="3513000" />
-      <workItem from="1637680159080" duration="6521000" />
+      <workItem from="1637680159080" duration="7520000" />
+      <workItem from="1637744816409" duration="6000" />
+      <workItem from="1638221059760" duration="19000" />
+      <workItem from="1638826689752" duration="4900000" />
     </task>
     <servers />
   </component>
