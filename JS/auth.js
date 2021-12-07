@@ -9,7 +9,7 @@ function login() {
         return;
     }
 
-    window.location.href = "../Main/homepage.html";
+    window.location.href = "../BasicUser/homepage.html";
 }
 
 function register() {

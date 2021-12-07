@@ -78,8 +78,8 @@ form {
 }
 
 
-/* Tickets */
-.ticket {
+/* Tickets & Notifications */
+.item {
     display: flex;
     margin: 0.5em;
     padding: 1em;
@@ -88,12 +88,12 @@ form {
     color: black;
 }
 
-.ticket:hover {
+.item:hover {
     background-color: lightgrey;
     cursor: pointer;
 }
 
-.ticketTitle {
+.itemTitle {
     flex: 1;
     display: flex;
     align-items: center;

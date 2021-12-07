@@ -9,7 +9,7 @@ const data = [
     {
         reference: "j47dsne",
         title: "Computer is broken 1",
-        notes: ["Placeholder text to describe problem with computer"],
+        notes: ["Placeholder text to describe problem with computer", "New note added"],
         status: ticketStatus.OPEN
     },
     {
@@ -31,8 +31,8 @@ const displayedTickets = data.map(({title, status, reference}) => {
     const url = `viewTicket.html?reference=${reference}`;
 
     return (
-        '<a class="ticket" href="' + url + '">' +
-        '<div class="ticketTitle">' + title + '</div>' +
+        '<a class="item" href="' + url + '">' +
+        '<div class="itemTitle">' + title + '</div>' +
         '<div class="' + statusClass + '">' + status + '</div>' +
         '</a>'
     );

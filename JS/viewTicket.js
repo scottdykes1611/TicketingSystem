@@ -8,7 +8,7 @@ let data = [
     {
         reference: "j47dsne",
         title: "Computer is broken 1",
-        notes: ["Placeholder text to describe problem with computer"],
+        notes: ["Placeholder text to describe problem with computer", "New note added"],
         status: ticketStatus.OPEN
     },
     {
