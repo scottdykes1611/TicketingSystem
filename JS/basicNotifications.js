@@ -3,7 +3,7 @@ const notificationStatus = {
     TICKET_CLOSED: "TicketClosed",
     TICKET_OPENED: "TicketOpened",
     NOTE_ADDED: "NoteAdded"
-}
+};
 
 //this will be replaced with data fetched from database
 const data = [
@@ -17,16 +17,16 @@ const displayedNotifications = data.map(({ticketReference, status}) => {
     const getTitle = () => {
         switch (status) {
             case notificationStatus.TICKET_CLOSED:
-                return "Ticket closed"
+                return "Ticket closed";
             case notificationStatus.TICKET_OPENED:
-                return "Ticket opened"
+                return "Ticket opened";
             case notificationStatus.NOTE_ADDED:
-                return "Note added"
+                return "Note added";
         }
-    }
+    };
 
     const url = `viewTicket.html?reference=${ticketReference}`;
-    const title = getTitle()
+    const title = getTitle();
 
     return (
         '<a class="item notification" href="' + url + '">' +

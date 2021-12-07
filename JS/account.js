@@ -1,5 +1,14 @@
 let error = false;
 
+//this would be fetched from the database
+const user = {
+    firstName: "John",
+    lastName: "Doe",
+    depName: "Accounting",
+    location: "Room 3B",
+    password: "password"
+};
+
 function updateAccount() {
     error = false;
 
@@ -22,7 +31,7 @@ function updateAccount() {
         password
     };
 
-    alert("Account updated")
+    alert("Account updated");
 
     //A call to the database would be run to update the user
 }
@@ -41,3 +50,23 @@ function getValue(id) {
 
     return value;
 }
+
+function displayDetails() {
+    const findAndDisplay = (name) => {
+        const element = document.getElementById(name);
+
+        element.value = user[name];
+    };
+
+    const names = [
+        "firstName",
+        "lastName",
+        "depName",
+        "location",
+        "password"
+    ];
+
+    names.forEach((name) => findAndDisplay(name));
+}
+
+displayDetails();

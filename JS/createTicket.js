@@ -19,14 +19,25 @@ function createTicket() {
 
     const reference = Math.random().toString(16).substr(2, 8);
 
+    //getting the user's email from local storage
+    const email = localStorage.getItem("email");
+
     const ticket = {
         reference,
         title,
-        notes,
-        status: ticketStatus.OPEN
+        notes: [
+            {
+                message: notes,
+                read: false,
+                user: email
+            }
+        ],
+        status: ticketStatus.OPEN,
+        created: new Date(),
+        createdBy: email
     };
 
-    console.log(ticket);
+    alert("Ticket created, your case reference is: " + reference);
 
     window.location.href = "../BasicUser/viewTickets.html";
 }

@@ -1,3 +1,21 @@
+const basicUsers = [
+    {
+        email: "user@email.com",
+        password: "password"
+    },
+    {
+        email: "lochei001@dundee.ac.uk",
+        password: "password"
+    }
+];
+
+const adminUsers = [
+    {
+        email: "admin@email.com",
+        password: "password"
+    }
+];
+
 function login() {
     let error = false;
 
@@ -9,7 +27,23 @@ function login() {
         return;
     }
 
-    window.location.href = "../BasicUser/homepage.html";
+    const basicUserMatch = basicUsers.find((user) => user.email === email && user.password === password);
+    if (basicUserMatch !== undefined) {
+        //adding user's email to local storage
+        localStorage.setItem("email", basicUserMatch.email);
+        window.location.href = "../BasicUser/homepage.html";
+        return;
+    }
+
+    const adminUserMatch = adminUsers.find((user) => user.email === email && user.password === password);
+    if (adminUserMatch !== undefined) {
+        //adding user's email to local storage
+        localStorage.setItem("email", adminUserMatch.email);
+        window.location.href = "../AdminUser/homepage.html";
+        return;
+    }
+
+    alert("Username or password incorrect");
 }
 
 function register() {

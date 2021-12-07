@@ -5,38 +5,76 @@ const ticketStatus = {
 };
 
 //this will be replaced with data fetched from database
-const data = [
+let data = [
     {
         reference: "j47dsne",
-        title: "Computer is broken 1",
-        notes: ["Placeholder text to describe problem with computer", "New note added"],
-        status: ticketStatus.OPEN
+        title: "Keyboard not working",
+        notes: [
+            {
+                message: "Some of the keys do not work",
+                read: true,
+                user: "lochei001@email.com",
+            },
+            {
+                message: "More of the keys have stopped working",
+                read: false,
+                user: "lochei001@email.com",
+            }
+        ],
+        status: ticketStatus.OPEN,
+        created: new Date(),
+        createdBy: "lochei001@dundee.ac.uk"
     },
     {
         reference: "9kalen3",
-        title: "Computer is broken 2",
-        notes: ["Placeholder text to describe problem with computer"],
-        status: ticketStatus.OPEN
+        title: "Cannot use the mouse",
+        notes: [
+            {
+                message: "The mouse for the computer does not work",
+                read: true,
+                user: "user@email.com",
+            }
+        ],
+        status: ticketStatus.OPEN,
+        created: new Date(),
+        createdBy: "user@email.com"
     },
     {
         reference: "nb829q",
-        title: "Computer is broken 3",
-        notes: ["Placeholder text to describe problem with computer"],
-        status: ticketStatus.CLOSED
+        title: "Cannot use software",
+        notes: [
+            {
+                message: "Some of the software doesn't work",
+                read: true,
+                user: "user@email.com",
+            },
+            {
+                message: "The problem has been fixed",
+                read: true,
+                user: "admin@email.com",
+            }
+        ],
+        status: ticketStatus.CLOSED,
+        created: new Date(),
+        createdBy: "user@email.com"
     },
 ];
 
-const displayedTickets = data.map(({title, status, reference}) => {
-    const statusClass = `ticketStatus ${status}`;
-    const url = `viewTicket.html?reference=${reference}`;
+const email = localStorage.getItem("email");
 
-    return (
-        '<a class="item" href="' + url + '">' +
-        '<div class="itemTitle">' + title + '</div>' +
-        '<div class="' + statusClass + '">' + status + '</div>' +
-        '</a>'
-    );
-});
+const displayedTickets = data
+    .filter(({createdBy}) => createdBy === email)
+    .map(({title, status, reference}) => {
+        const statusClass = `ticketStatus ${status}`;
+        const url = `viewTicket.html?reference=${reference}`;
+
+        return (
+            '<a class="item" href="' + url + '">' +
+            '<div class="itemTitle">' + title + '</div>' +
+            '<div class="' + statusClass + '">' + status + '</div>' +
+            '</a>'
+        );
+    });
 
 const element = document.getElementById("viewTickets");
 element.innerHTML = displayedTickets.join("");
