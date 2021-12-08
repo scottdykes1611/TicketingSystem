@@ -64,6 +64,8 @@ let data = [
 const urlParams = window.location.search;
 const {groups: {reference}} = /\?reference=(?<reference>.*)/.exec(urlParams);
 
+const userType = localStorage.getItem("userType")
+
 function getTicket(reference) {
     //this function will be replaced with a fetch from the database
     return data.find((ticket) => {
@@ -79,7 +81,6 @@ function getTicket(reference) {
         }
 
         //pass the filter if the current user is an admin
-        const userType = localStorage.getItem("userType")
         return userType === "admin"
     });
 }
@@ -102,7 +103,7 @@ function addNote() {
 
     const note = {
         message: document.getElementById("notes").value,
-        read: false,
+        read: userType === "admin",
         user: email
     };
 
@@ -123,7 +124,12 @@ function displayTicket() {
 
     const statusClass = `ticketStatus ${status}`;
     const displayedNotes = notes.map((note) => {
-        const read = note.read ? "Read by admin" : "Not read by admin";
+        //display whether the ticket has been read by admin (if user is not admin)
+        const read = userType === "basic" ? (
+            note.read ? "Read by admin" : "Not read by admin"
+        ) : ""
+
+        //if the user is admin, make a call to database to mark any unread notes as read
 
         return (
             '<h3>' +

@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fc16127-268d-44e4-a185-6c92dbdbea8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JS/logout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Main/logout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/basicNotifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/notifications.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/createTicket.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/createTicket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/viewTicket.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/viewTicket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/viewTickets.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/viewTickets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/AdminUser/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/AdminUser/createTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main/createTicket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/AdminUser/homepage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/AdminUser/viewTicket.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main/viewTicket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/AdminUser/viewTickets.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main/viewTickets.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/BasicUser/account.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/BasicUser/createTicket.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/BasicUser/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main/homepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/BasicUser/viewTicket.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/BasicUser/viewTickets.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/Styles/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +75,7 @@
       <workItem from="1637680159080" duration="7520000" />
       <workItem from="1637744816409" duration="6000" />
       <workItem from="1638221059760" duration="19000" />
-      <workItem from="1638826689752" duration="17855000" />
+      <workItem from="1638826689752" duration="18321000" />
     </task>
     <servers />
   </component>
