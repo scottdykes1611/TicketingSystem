@@ -62,8 +62,19 @@ let data = [
 
 const email = localStorage.getItem("email");
 
+const userType = localStorage.getItem("userType")
+
 const displayedTickets = data
-    .filter(({createdBy}) => createdBy === email)
+    .filter((ticket) => {
+        //check if the user is admin
+        if (userType === "admin") {
+            return true
+        }
+
+        //check if the notification is relevant to the user
+        const email = localStorage.getItem("email")
+        return email === ticket.createdBy
+    })
     .map(({title, status, reference}) => {
         const statusClass = `ticketStatus ${status}`;
         const url = `viewTicket.html?reference=${reference}`;
@@ -78,3 +89,12 @@ const displayedTickets = data
 
 const element = document.getElementById("viewTickets");
 element.innerHTML = displayedTickets.join("");
+
+//if the user is a basic user, add a "create new ticket" button
+if (userType === "basic") {
+    console.log("in here")
+    const newTicketButton = (
+        '<a class="link" href="./createTicket.html">Create new ticket</a>'
+    )
+    document.getElementById("newTicket").innerHTML = newTicketButton;
+}

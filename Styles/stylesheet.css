@@ -89,7 +89,7 @@ form {
 /* Tickets & Notifications */
 .item {
     display: flex;
-    margin: 0.5em;
+    margin: 0.5em 0;
     padding: 1em;
     background-color: darkgrey;
     text-decoration: none;

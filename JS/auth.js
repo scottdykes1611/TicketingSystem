@@ -1,3 +1,4 @@
+//this would be data from the database
 const basicUsers = [
     {
         email: "user@email.com",
@@ -31,7 +32,8 @@ function login() {
     if (basicUserMatch !== undefined) {
         //adding user's email to local storage
         localStorage.setItem("email", basicUserMatch.email);
-        window.location.href = "../BasicUser/homepage.html";
+        localStorage.setItem("userType", "basic");
+        window.location.href = "../Main/homepage.html";
         return;
     }
 
@@ -39,7 +41,8 @@ function login() {
     if (adminUserMatch !== undefined) {
         //adding user's email to local storage
         localStorage.setItem("email", adminUserMatch.email);
-        window.location.href = "../AdminUser/homepage.html";
+        localStorage.setItem("userType", "admin");
+        window.location.href = "../Main/homepage.html";
         return;
     }
 

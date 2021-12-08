@@ -22,6 +22,7 @@ function createTicket() {
     //getting the user's email from local storage
     const email = localStorage.getItem("email");
 
+    //this would be saved in the database
     const ticket = {
         reference,
         title,
@@ -39,7 +40,7 @@ function createTicket() {
 
     alert("Ticket created, your case reference is: " + reference);
 
-    window.location.href = "../BasicUser/viewTickets.html";
+    window.location.href = "../Main/viewTickets.html";
 }
 
 function getValue(id) {

@@ -66,7 +66,22 @@ const {groups: {reference}} = /\?reference=(?<reference>.*)/.exec(urlParams);
 
 function getTicket(reference) {
     //this function will be replaced with a fetch from the database
-    return data.find((ticket) => ticket.reference === reference);
+    return data.find((ticket) => {
+        //filter out if the reference does not match
+        if (ticket.reference !== reference) {
+            return false
+        }
+
+        //pass the filter if it was created by the current user
+        const email = localStorage.getItem("email")
+        if (ticket.createdBy === email) {
+            return true
+        }
+
+        //pass the filter if the current user is an admin
+        const userType = localStorage.getItem("userType")
+        return userType === "admin"
+    });
 }
 
 function toggleStatus(status) {
@@ -99,6 +114,10 @@ function addNote() {
 
 function displayTicket() {
     const ticket = getTicket(reference);
+
+    if (ticket === undefined) {
+        return "404 Ticket not found"
+    }
 
     const {title, notes, status} = ticket;
 
