@@ -64,24 +64,24 @@ let data = [
 const urlParams = window.location.search;
 const {groups: {reference}} = /\?reference=(?<reference>.*)/.exec(urlParams);
 
-const userType = localStorage.getItem("userType")
+const userType = localStorage.getItem("userType");
 
 function getTicket(reference) {
     //this function will be replaced with a fetch from the database
     return data.find((ticket) => {
         //filter out if the reference does not match
         if (ticket.reference !== reference) {
-            return false
+            return false;
         }
 
         //pass the filter if it was created by the current user
-        const email = localStorage.getItem("email")
+        const email = localStorage.getItem("email");
         if (ticket.createdBy === email) {
-            return true
+            return true;
         }
 
         //pass the filter if the current user is an admin
-        return userType === "admin"
+        return userType === "admin";
     });
 }
 
@@ -117,7 +117,7 @@ function displayTicket() {
     const ticket = getTicket(reference);
 
     if (ticket === undefined) {
-        return "404 Ticket not found"
+        return "404 Ticket not found";
     }
 
     const {title, notes, status} = ticket;
@@ -127,7 +127,7 @@ function displayTicket() {
         //display whether the ticket has been read by admin (if user is not admin)
         const read = userType === "basic" ? (
             note.read ? "Read by admin" : "Not read by admin"
-        ) : ""
+        ) : "";
 
         //if the user is admin, make a call to database to mark any unread notes as read
 

@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Create Ticket - Ticketing System</title>
-		<link rel="stylesheet" type="text/css" href="../../Styles/stylesheet.css"/>
+		<link href="../../Styles/stylesheet.css" rel="stylesheet" type="text/css"/>
 		<script src="../../JS/createTicket.js">
 		</script>
 	</head>
@@ -30,16 +30,16 @@
 		<div class="card">
 			<form onsubmit="event.preventDefault();">
 				<div class="formElement">
-					<label for="title" class="formLabel">Ticket title:</label><br>
-					<input type="text" id="title" name="title" class="formInput"><br>
+					<label class="formLabel" for="title">Ticket title:</label><br>
+					<input class="formInput" id="title" name="title" type="text"><br>
 				</div>
 
 				<div class="formElement">
-					<label for="notes" class="formLabel">Notes:</label><br>
-					<textarea id="notes" name="notes" class="formInput" rows="4"></textarea><br>
+					<label class="formLabel" for="notes">Notes:</label><br>
+					<textarea class="formInput" id="notes" name="notes" rows="4"></textarea><br>
 				</div>
 
-				<button type="submit" class="submit" onclick="createTicket()">Submit</button>
+				<button class="submit" onclick="createTicket()" type="submit">Submit</button>
 			</form>
 		</div>
 	</body>

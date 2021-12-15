@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Log in - Ticketing System</title>
-		<link rel="stylesheet" type="text/css" href="../../Styles/stylesheet.css"/>
+		<link href="../../Styles/stylesheet.css" rel="stylesheet" type="text/css"/>
 		<script src="../../JS/auth.js">
 		</script>
 	</head>
@@ -17,16 +17,16 @@
 			<h2 class="subtitle">Log in</h2>
 			<form onsubmit="event.preventDefault();">
 				<div class="formElement">
-					<label for="email" class="formLabel">Email address:</label><br>
-					<input type="email" id="email" name="email" class="formInput"><br>
+					<label class="formLabel" for="email">Email address:</label><br>
+					<input class="formInput" id="email" name="email" type="email"><br>
 				</div>
 
 				<div class="formElement">
-					<label for="password" class="formLabel">Password:</label><br>
-					<input type="password" id="password" name="password" class="formInput"><br>
+					<label class="formLabel" for="password">Password:</label><br>
+					<input class="formInput" id="password" name="password" type="password"><br>
 				</div>
 
-				<button type="submit" class="submit" onclick="login()">Submit</button>
+				<button class="submit" onclick="login()" type="submit">Submit</button>
 
 				<a href="./requestReset.html">Forgot your password?</a>
 			</form>

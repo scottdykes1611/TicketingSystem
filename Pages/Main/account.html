@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Account - Ticketing System</title>
-		<link rel="stylesheet" type="text/css" href="../../Styles/stylesheet.css"/>
+		<link href="../../Styles/stylesheet.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
 		<div class="card">
@@ -28,31 +28,31 @@
 		<div class="card">
 			<form onsubmit="event.preventDefault();">
 				<div class="formElement">
-					<label for="firstName" class="formLabel">First name:</label><br>
-					<input type="text" id="firstName" name="firstName" class="formInput"><br>
+					<label class="formLabel" for="firstName">First name:</label><br>
+					<input class="formInput" id="firstName" name="firstName" type="text"><br>
 				</div>
 
 				<div class="formElement">
-					<label for="lastName" class="formLabel">Last name:</label><br>
-					<input type="text" id="lastName" name="lastName" class="formInput"><br>
+					<label class="formLabel" for="lastName">Last name:</label><br>
+					<input class="formInput" id="lastName" name="lastName" type="text"><br>
 				</div>
 
 				<div class="formElement">
-					<label for="depName" class="formLabel">Department name:</label><br>
-					<input type="text" id="depName" name="depName" class="formInput"><br>
+					<label class="formLabel" for="depName">Department name:</label><br>
+					<input class="formInput" id="depName" name="depName" type="text"><br>
 				</div>
 
 				<div class="formElement">
-					<label for="location" class="formLabel">Office/room location:</label><br>
-					<input type="text" id="location" name="location" class="formInput"><br>
+					<label class="formLabel" for="location">Office/room location:</label><br>
+					<input class="formInput" id="location" name="location" type="text"><br>
 				</div>
 
 				<div class="formElement">
-					<label for="password" class="formLabel">Password:</label><br>
-					<input type="password" id="password" name="password" class="formInput"><br>
+					<label class="formLabel" for="password">Password:</label><br>
+					<input class="formInput" id="password" name="password" type="password"><br>
 				</div>
 
-				<button type="submit" class="submit" onclick="updateAccount()">Submit</button>
+				<button class="submit" onclick="updateAccount()" type="submit">Submit</button>
 			</form>
 		</div>
 		<script src="../../JS/account.js">
