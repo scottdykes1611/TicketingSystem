@@ -21,17 +21,15 @@ const data = [
 
 const displayedNotifications = data
     .filter((notification) => {
-        console.log("adas")
-        console.log(notification)
         //check if the user is admin
-        const userType = localStorage.getItem("userType")
+        const userType = localStorage.getItem("userType");
         if (userType === "admin") {
-            return true
+            return true;
         }
 
         //check if the notification is relevant to the user
-        const email = localStorage.getItem("email")
-        return email === notification.relevantUser
+        const email = localStorage.getItem("email");
+        return email === notification.relevantUser;
     })
     .map(({ticketReference, status}) => {
         const getTitle = () => {

@@ -1,3 +1,5 @@
+var error = false;
+
 //this would be data from the database
 const basicUsers = [
     {
@@ -18,7 +20,7 @@ const adminUsers = [
 ];
 
 function login() {
-    let error = false;
+    error = false;
 
     const email = getValue("email");
     const password = getValue("password");
@@ -50,7 +52,7 @@ function login() {
 }
 
 function register() {
-    let error = false;
+    error = false;
 
     const firstName = getValue("firstName");
     const lastName = getValue("lastName");
@@ -58,6 +60,15 @@ function register() {
     const location = getValue("location");
     const email = getValue("email");
     const password = getValue("password");
+
+    const user = {
+        firstName,
+        lastName,
+        depName,
+        location,
+        email,
+        password
+    };
 
     if (error === true) {
         alert("Data is invalid");
@@ -68,7 +79,7 @@ function register() {
 }
 
 function requestReset() {
-    let error = false;
+    error = false;
 
     const email = getValue("email");
 
@@ -81,7 +92,7 @@ function requestReset() {
 }
 
 function resetPassword() {
-    let error = false;
+    error = false;
 
     const password = getValue("password");
     const confirmPassword = getValue("confirmPassword");
